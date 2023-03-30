@@ -31,7 +31,7 @@ jobs:
           images: ${{ secrets.DOCKER_USERNAME }}/nightscout-with-cgp
           tags: |
             # latest on main
-            type=raw,value=latest,enable={{is_default_branch}}
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
             # tag event
             type=ref,enable=true,priority=600,prefix=,suffix=,event=tag
             # pull request event
