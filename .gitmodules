@@ -1,0 +1,3 @@
+[submodule "cgm-remote-monitor"]
+	path = cgm-remote-monitor
+	url = https://github.com/nightscout/cgm-remote-monitor.git

@@ -1,5 +1,6 @@
 FROM nightscout/cgm-remote-monitor
 WORKDIR /opt/app
+ADD cgm-remote-monitor/* /opt/app/
 ADD files/* /opt/app/lib/report_plugins/
 
 RUN npm install --cache /tmp/empty-cache && \
