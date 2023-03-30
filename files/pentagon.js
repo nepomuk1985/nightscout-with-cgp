@@ -38,13 +38,13 @@ pentagon.html = function html (client) {
     '<h2>' + translate('Comprehensive Glucose Pentagon') + '</h2>' +
     '<b>' + translate('To see this report, press SHOW while in this view') + '</b><br>' +
     translate('Time span') + ': ' +
-    '<input type="radio" name="timeSpan" id="ts1d" value="1" checked>' +
+    '<input type="radio" name="timeSpan" id="ts1d" value="1">' +
     translate('1d') +
     '<input type="radio" name="timeSpan" id="ts7d" value="7">' +
     translate('7d') +
     '<input type="radio" name="timeSpan" id="ts30d" value="30">' +
     translate('30d') +
-    '<input type="radio" name="timeSpan" id="tsAll">' +
+    '<input type="radio" name="timeSpan" id="tsAll" checked>' +
     translate('All time') + '<br>' +
     translate('Chart scaling:') + ' <input type="number" id="pentagonScaleFactor" value="4">' + '<br>' +
     '<div id="pentagoncharts">' +
